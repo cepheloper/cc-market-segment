@@ -2,7 +2,7 @@
 import logging 
 import pandas as pd
 from abc import ABC,abstractmethod
-
+from typing import List
 
 class ICleaner(ABC):
 
@@ -21,7 +21,7 @@ class MarketingCSVCleaner(ICleaner):
         # The two columns below do not contribute the model for this kind of dataset 
         dataframe = self._set_null_to_mean(dataframe,columns = ['MINIMUM_PAYMENTS','CREDIT_LIMIT'])
 
-    def _set_null_to_mean(self, dataframe: pd.DataFrame , columns: list[str]):
+    def _set_null_to_mean(self, dataframe: pd.DataFrame , columns: List[str]):
         '''Mean is chosen based on the inherent nature of the expected data'''
         for column in columns: 
             if column in dataframe.columns:

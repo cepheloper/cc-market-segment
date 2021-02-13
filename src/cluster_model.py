@@ -3,9 +3,12 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import io
+from seaborn.utils import relative_luminance
 from sklearn.preprocessing import StandardScaler, normalize
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
+from typing import List 
+from pathlib import Path
 
 class ClusteringModel: 
     
@@ -25,11 +28,20 @@ class ClusteringModel:
 
 
     @staticmethod
-    def _save_to_bytes_image(plt_: plt):
+    def _save_to_bytes_image(plot: plt):
         bytes_image = io.BytesIO()
-        plt_.savefig(bytes_image, format='png')
+        plot.savefig(bytes_image, format='png')
         bytes_image.seek(0)
         return bytes_image
+
+    @staticmethod
+    def _save_to_png_image(plot:plt, filename):
+        # write to disk isntead - this is used as alternative route for a different use case 
+        filedir = Path(__file__).parent
+        relative_path = 'results'
+        save_location = (filedir / relative_path / filename ).resolve()
+        plot.savefig(save_location, format='png')
+        
 
     def KDE_plot(self): 
         n = len(self.dataframe.columns)
@@ -39,24 +51,28 @@ class ClusteringModel:
             sns.distplot(self.dataframe[self.dataframe.columns[i]], kde_kws={"color": "b", "lw": 3, "label": "KDE"}, hist_kws={"color": "g"})
             plt.title(self.dataframe.columns[i])
         plt.tight_layout()
+        self._save_to_png_image(plt,"KDEPlot.png")
         return self._save_to_bytes_image(plt)
 
     def correlation_plot(self):
         correlations = self.dataframe.corr()
         f, ax = plt.subplots(figsize = (20, 20))
         sns.heatmap(correlations, annot = True)
+        self._save_to_png_image(plt,"CorrelationPlot.png")
         return self._save_to_bytes_image(plt)
 
-    def elbow_plot(self, clusters_scores: list[int] = []):
+    def elbow_plot(self, clusters_scores: List[int] = []):
         if not  clusters_scores:
             clusters_scores = self._generate_clusters_score()
+        plt.figure(figsize=(15,15))
         plt.plot(clusters_scores, 'bx-')
         plt.title('Optimize the number of clusters')
         plt.xlabel('Clusters')
         plt.ylabel('Scores') 
+        self._save_to_png_image(plt,"ElbowPlot.png")
         return self._save_to_bytes_image(plt)
 
-    def _generate_clusters_score(self, no_of_clusters_list: list[int] = []):
+    def _generate_clusters_score(self, no_of_clusters_list: List[int] = []):
         clusters_scores = []
         if not no_of_clusters_list:
             # choosing arbitary number of clusters to expiriment as default 
@@ -74,7 +90,7 @@ class ClusteringModel:
     def centroids(self, no_of_clusters: int = 8) -> pd.DataFrame :
         _kmeans = self._generate_KMeans(no_of_clusters)
         cluster_centers = pd.DataFrame(data = _kmeans.cluster_centers_,columns = [self.dataframe.columns])
-        cluster_centers = self.scaler.inverse_transform(cluster_centers)
+        cluster_centers = self.scaler.inverse_transform(cluster_centers) #inverse can only be called only after the data is fitted.
         return pd.DataFrame(data = cluster_centers, columns = [self.dataframe.columns])
 
     def _generate_PCA(self, no_of_clusters: int, no_of_pca: int):
@@ -90,5 +106,6 @@ class ClusteringModel:
         pca_df = self._generate_PCA(no_of_clusters, no_of_pca =2)
         plt.figure(figsize=(10,10))
         ax = sns.scatterplot(x="PCA1", y="PCA2", hue = "cluster", data = pca_df, palette =['red','green','blue','pink','yellow','gray','purple', 'black'])
+        self._save_to_png_image(plt,"PCAPlot.png")
         return self._save_to_bytes_image(plt)
 
