@@ -1,0 +1,234 @@
+2021-02-09 19:59:43,838 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-46-9559fdb4f3d2>", line 132, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 19:59:43,838 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-46-9559fdb4f3d2>", line 132, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 19:59:43,838 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-46-9559fdb4f3d2>", line 132, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 20:37:58,408 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-75-0f8e7deea630>", line 136, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 20:37:58,408 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-75-0f8e7deea630>", line 136, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 20:37:58,408 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-75-0f8e7deea630>", line 136, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 20:37:58,408 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-75-0f8e7deea630>", line 136, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 20:41:20,482 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-79-a5f135cb7a44>", line 136, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 20:41:20,482 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-79-a5f135cb7a44>", line 136, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 20:41:20,482 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-79-a5f135cb7a44>", line 136, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 20:41:20,482 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-79-a5f135cb7a44>", line 136, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 20:41:20,482 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-79-a5f135cb7a44>", line 136, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 20:43:45,411 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-84-e30ebdbafbc9>", line 136, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 20:43:45,411 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-84-e30ebdbafbc9>", line 136, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 20:43:45,411 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-84-e30ebdbafbc9>", line 136, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 20:43:45,411 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-84-e30ebdbafbc9>", line 136, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 20:43:45,411 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-84-e30ebdbafbc9>", line 136, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
+2021-02-09 20:43:45,411 : ERROR : __main__ : Fail to drop CUST_ID. Warning: Column may not exists
+Traceback (most recent call last):
+  File "<ipython-input-84-e30ebdbafbc9>", line 136, in _drop_CUST_ID
+    dataframe.drop("CUST_ID", axis = 1, inplace= True)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\frame.py", line 4167, in drop
+    return super().drop(
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3889, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\generic.py", line 3923, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "C:\Users\Computer\Anaconda3\envs\ml_market_seg\lib\site-packages\pandas\core\indexes\base.py", line 5287, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['CUST_ID'] not found in axis"
