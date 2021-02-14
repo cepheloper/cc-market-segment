@@ -1,0 +1,18 @@
+FROM continuumio/miniconda
+WORKDIR /app
+COPY environment.yml .
+RUN conda env create -f environment.yml
+
+SHELL ["conda", "run", "-n", "ml_market_seg", "/bin/bash", "-c"]
+
+# The code to run when container is started:
+
+COPY src/cleaning.py src/cluster_model.py src/entrypoints.py ./
+COPY src/tests/ ./tests/
+COPY src/results/ ./results/ 
+
+RUN ls -la /app/*
+
+
+ENTRYPOINT ["conda", "run","-n", "ml_market_seg", "python", "entrypoints.py"]
+

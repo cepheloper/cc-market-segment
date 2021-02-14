@@ -1,0 +1,10 @@
+name: ml_market_seg
+channels:
+  - defaults
+dependencies:
+  - python
+  - seaborn
+  - scikit-learn
+  - pathlib
+
+prefix: C:\Users\Computer\Anaconda3\envs\ml_market_seg
